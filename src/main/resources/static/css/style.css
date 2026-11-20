@@ -1,0 +1,116 @@
+/*Name  : Hettiarachchi Harsha Prabhath Chamara*/
+/*ID    :M25W7571*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111827;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Calculator Container */
+.calculator {
+    width: 420px;
+    max-width: 100%;
+    background-color: #1f2937;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fbbf24;
+    font-size: 26px;
+}
+
+/* User Information */
+.user-info {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #d1d5db;
+}
+
+/* Calculator Display */
+#display {
+    width: 100%;
+    height: 65px;
+    background-color: #111827;
+    color: white;
+    border: 1px solid #374151;
+    border-radius: 10px;
+    font-size: 28px;
+    text-align: right;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+/* Button Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Calculator Buttons */
+button {
+    height: 55px;
+    width: 100%;
+    border: none;
+    border-radius: 9px;
+    background-color: #374151;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Button Hover */
+button:hover {
+    background-color: #4b5563;
+}
+
+/* Button Click */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .calculator {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    button {
+        height: 48px;
+        font-size: 15px;
+    }
+}
+
+.clear-button {
+    grid-column: span 4;
+    background-color: #dc2626;
+}
+
+.clear-button:hover {
+    background-color: #b91c1c;
+}

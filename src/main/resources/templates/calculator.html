@@ -1,0 +1,74 @@
+<!-- Name  : Hettiarachchi Harsha Prabhath Chamara-->
+<!-- ID : M25W7571-->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Scientific Calculator</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <script th:src="@{/css/js/calculator.js}" defer></script>
+</head>
+
+<body>
+
+<div class="calculator">
+
+    <h1>Scientific Calculator</h1>
+
+    <div class="user-info">
+        <p>Full Name: Harsha Hettiarachchi</p>
+        <p>Student ID: M25W7571</p>
+    </div>
+
+    <div>
+        <input type="text"
+               id="display"
+               placeholder="0"
+               readonly>
+    </div>
+
+    <div class="buttons">
+
+        <button type="button" data-value="7">7</button>
+        <button type="button" data-value="8">8</button>
+        <button type="button" data-value="9">9</button>
+        <button type="button" data-value="/">/</button>
+
+        <button type="button" data-value="4">4</button>
+        <button type="button" data-value="5">5</button>
+        <button type="button" data-value="6">6</button>
+        <button type="button" data-value="*">*</button>
+
+        <button type="button" data-value="1">1</button>
+        <button type="button" data-value="2">2</button>
+        <button type="button" data-value="3">3</button>
+        <button type="button" data-value="-">-</button>
+
+        <button type="button" data-value="0">0</button>
+        <button type="button" data-value=".">.</button>
+        <button type="button" data-action="equals">=</button>
+        <button type="button" data-value="+">+</button>
+
+        <button type="button" data-action="sin">sin</button>
+        <button type="button" data-action="cos">cos</button>
+        <button type="button" data-action="tan">tan</button>
+        <button type="button" data-action="sqrt">√</button>
+
+        <button type="button" data-action="log">log</button>
+        <button type="button" data-action="ln">ln</button>
+        <button type="button" data-action="square">x²</button>
+        <button type="button" data-action="cube">x³</button>
+
+        <button type="button"
+                class="clear-button"
+                data-action="clear">Clear</button>
+
+    </div>
+
+</div>
+
+</body>
+</html>
